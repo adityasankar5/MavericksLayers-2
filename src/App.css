@@ -96,3 +96,14 @@ button[disabled] {
     transform: translateX(calc(100vw - 20px)); /* Subtracting the image width to ensure it moves completely */
   }
 }
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotating-image {
+  animation: rotateClockwise 10s linear infinite; /* Adjust the duration and timing function as needed */
+}

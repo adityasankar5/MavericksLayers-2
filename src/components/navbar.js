@@ -21,13 +21,13 @@ const Navbar = () => {
     const menu = (
         <Menu>
             <Menu.Item key="0">
-                <Link to={'/redeem'}><span className="text-[#ffde59] font-semibold uppercase">Redeem</span></Link>
+                <Link to={'/redeem'}><span className="text-[#ee8650] font-[Oswald] font-semibold uppercase">Redeem</span></Link>
             </Menu.Item>
             <Menu.Item key="1">
-                <Link to={'/create-link'}><span className="text-[#ffde59] font-semibold uppercase">Create</span></Link>
+                <Link to={'/create-link'}><span className="text-[#ee8650] font-[Oswald] font-semibold uppercase">Create</span></Link>
             </Menu.Item>
             <Menu.Item key="2">
-                <Link to={'/my-nft'}><span className="text-[#ffde59] font-semibold uppercase">My NFTt</span></Link>
+                <Link to={'/my-nft'}><span className="text-[#ee8650] font-[Oswald] font-semibold uppercase">My NFTt</span></Link>
             </Menu.Item>
         </Menu>
     );
@@ -39,10 +39,10 @@ const Navbar = () => {
                     <h1 className="text-white text-xl font-[Inter]">
                         <Link to={'/'}><img src={logo} className="" /></Link>
                     </h1>
-                    <Link to={'/redeem'}><span className="text-[#ffde59] hidden md:block font-semibold uppercase">Redeem</span></Link>
-                    <Link to={'/create-link'}><span className="text-[#ffde59] hidden md:block font-semibold uppercase">Create</span></Link>
+                    <Link to={'/redeem'}><span className="text-[#ee8650] font-[Oswald] hidden md:block font-semibold uppercase">Redeem</span></Link>
+                    <Link to={'/create-link'}><span className="text-[#ee8650] font-[Oswald] hidden md:block font-semibold uppercase">Create</span></Link>
                     <div>
-                        <span className="text-[#ffde59] hidden md:block font-semibold uppercase cursor-pointer" onClick={handleOtherMenuToggle}>
+                        <span className="text-[#ee8650] font-[Oswald] hidden md:block font-semibold uppercase cursor-pointer" onClick={handleOtherMenuToggle}>
                             Other
                         </span>
                         <Popover
@@ -51,14 +51,14 @@ const Navbar = () => {
                             onVisibleChange={handleOtherMenuToggle}
                             placement="bottom"
                         >
-                            <span className="text-[#ffde59] hidden md:block font-semibold uppercase cursor-pointer">
+                            <span className="text-[#ee8650] hidden md:block font-semibold uppercase cursor-pointer">
                                 
                             </span>
                         </Popover>
                     </div>
                 </div>
                 <div className="col-span-5"></div>
-                <div className="col-span-3 flex items-center justify-end text-[#ffde59] text-sm md:text-base">
+                <div className="col-span-3 flex items-center justify-end text-[#ee8650] text-sm md:text-base">
                     <div className="flex items-center gap-2 font-semibold">
                         {/* LOGIN */}
                         <ConnectButton />
@@ -68,9 +68,9 @@ const Navbar = () => {
                         <Popover
                             content={<div className="w-[250px]" onClick={() => setMenuOpen(false)}>
                                 <div className="flex flex-col gap-3">
-                                    <Link to={'/redeem'}><span className="text-[#ffde59] font-semibold uppercase">Redeem</span></Link>
-                                    <Link to={'/create-link'}><span className="text-[#ffde59] font-semibold uppercase">Create</span></Link>
-                                    <Link to={'/my-nft'}><span className="text-[#ffde59] font-semibold uppercase">My NFT</span></Link>
+                                    <Link to={'/redeem'}><span className="text-[#ee8650] font-semibold uppercase">Redeem</span></Link>
+                                    <Link to={'/create-link'}><span className="text-[#ee8650] font-semibold uppercase">Create</span></Link>
+                                    <Link to={'/my-nft'}><span className="text-[#ee8650] font-semibold uppercase">My NFT</span></Link>
                                     {/* <Link to={''}><span className="text-[#C9FF28] font-semibold uppercase">{tmpAddress.slice(0, 6)}...{tmpAddress.slice(-4)}</span></Link> */}
                                 </div>
                             </div>}
